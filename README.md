@@ -3,5 +3,5 @@
 ## Contents
 
 * Set Up [R & RStudio](https://github.com/UB-BiomedicalInformatics/orientation/blob/master/R/README.md)
-* Set Up Python
-* Set Up SQL
+* Set Up [Python](https://github.com/UB-BiomedicalInformatics/orientation/blob/master/Python/README.md)
+
