@@ -8,6 +8,8 @@ Questions, email Jamie Bono at [jamie@buffalo.edu](mailto:jamie@buffalo.edu).
 
 ## Contents
 
-* Set Up [R & RStudio](https://github.com/UB-BiomedicalInformatics/orientation/blob/master/R/README.md)
-* Set Up [Python](https://github.com/UB-BiomedicalInformatics/orientation/blob/master/Python/README.md)
+* [R & RStudio](https://github.com/UB-BiomedicalInformatics/orientation/blob/master/R/README.md)
+* [Python](https://github.com/UB-BiomedicalInformatics/orientation/blob/master/Python/README.md)
+* [SQL](https://github.com/UB-BiomedicalInformatics/orientation/blob/master/SQL/README.md) (coming soon!)
+* [Git](https://github.com/UB-BiomedicalInformatics/orientation/blob/master/Git/README.md) (coming soon!)
 
