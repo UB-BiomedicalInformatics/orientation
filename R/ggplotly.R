@@ -94,3 +94,8 @@ ggplot(gapminder, aes(x = lifeExp, fill = continent)) +
 ggplotly(ggplot(gapminder, aes(x = gdpPercap, y = lifeExp)) +
   scale_x_log10() + geom_bin2d())
 
+# try geom_violin() instead and just generally goofing off now
+ggplotly(ggplot(gapminder, aes(x = year, y = lifeExp)) +
+  geom_violin(aes(group = year)) +
+  geom_jitter(alpha = 1/4) +
+  geom_smooth(se = FALSE))

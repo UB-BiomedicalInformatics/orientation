@@ -112,3 +112,16 @@ ggplot(gapminder, aes(x = gdpPercap, y = lifeExp)) +
   scale_x_log10() + geom_bin2d()
 
 # Strpplots and Boxplots ====
+
+# boxplot for one quantitative variable against a discrete variable  
+# first attempt does not work since year is not formally a factor
+ggplot(gapminder, aes(x = year, y = lifeExp)) + geom_boxplot()
+
+# by explicitly specifying year as the grouping variable, we get what we want
+ggplot(gapminder, aes(x = year, y = lifeExp)) + geom_boxplot(aes(group = year))
+
+# try geom_violin() instead and just generally goofing off now
+ggplot(gapminder, aes(x = year, y = lifeExp)) +
+  geom_violin(aes(group = year)) +
+  geom_jitter(alpha = 1/4) +
+  geom_smooth(se = FALSE)
