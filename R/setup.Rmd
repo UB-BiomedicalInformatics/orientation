@@ -1,0 +1,45 @@
+---
+title: "Set Up"
+author: "Jamie Bono"
+date: "7/10/2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Installing Packages
+
+#### Note code comments using `#`.
+```{r tidyverse}
+# install.packages("tidyverse")     # Metalibrary of tools for tidy data munging automatically loads:
+#  install.packages("dplyr")         # Tools for data manipulation
+#  install.packages("stringr")       # Tools for working with character variables
+#  install.packages("purrr")         # Tools for functional programming
+#  install.packages("tibble")        # Tools for managing "tibble" objects
+#  install.packages("tidyr")         # Tools for reshaping data
+#  install.packages("ggplot2")       # Grammar of Graphics plotting
+#  install.packages("forcats")       # Tools for working with factors
+```
+
+We call tidyverse a "metapackage" because when you load it into memory with the `library(tidyverse)` command, it loads all of the "tidyverse" packages, listed above.
+
+```{r}
+library(tidyverse)
+```
+
+```{r}
+# install.packages("readxl")      # Read Excel files
+# install.packages("gapminder")   # Gapminder dataset
+# install.packages("plotly")      # Create interactive plots on-the-fly using the Plot.ly API
+```
+
+## Creating Projects
+
+
+
+## Cloning Repositories
+
+
+

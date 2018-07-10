@@ -1,0 +1,122 @@
+R & RStudio Overview
+========================================================
+author: Jamie Bono
+date: July 11, 2018
+autosize: true
+
+Agenda
+========================================================
+
+* Check that everyone has R, RStudio, and Git installed
+* Setting up RStudio Integrated Development Environment ([IDE](https://en.wikipedia.org/wiki/Integrated_development_environment))
+* Navigating the RStudio IDE
+* Installing R packages
+
+**Break**
+
+* Working with data
+  * The "Tidy Data Workflow"
+  * Importing data
+  * Exporting data
+  * Tranforming data
+  * Exploratory data analysis
+  * Data viusalization
+
+Topics We Will Not be Covering
+========================================================
+
+* This workshop focuses on teaching the fundamentals of R and does not teach statistical analysis.
+
+* Anything other than "rectangular" data structures
+
+* Python, SQL, Excel, SAS, SPSS, Stata (although we will talk about them)
+
+R and RStudio are not the same thing
+========================================================
+
+* "R is a language and environment for statistical computing and graphics." - [R Project for Statistical Computing](https://www.r-project.org/about.html) 
+
+* "RStudio is an integrated development environment (IDE) for R. It includes a console, syntax-highlighting editor that supports direct code execution, as well as tools for plotting, history, debugging and workspace management." - [RStudio](https://www.rstudio.com/products/rstudio/)
+
+[demo]
+
+Packages
+=========================================================
+
+```{r tidyverse}
+# install.packages("tidyverse")     # Metalibrary of tools for tidy data munging automatically loads:
+#  install.packages("dplyr")         # Tools for data manipulation
+#  install.packages("stringr")       # Tools for working with character variables
+#  install.packages("purrr")         # Tools for functional programming
+#  install.packages("tibble")        # Tools for managing "tibble" objects
+#  install.packages("tidyr")         # Tools for reshaping data
+#  install.packages("ggplot2")       # Grammar of Graphics plotting
+#  install.packages("forcats")       # Tools for working with factors
+```
+
+Tidyverse
+=========================================================
+We call tidyverse a "metapackage" because when you load it into memory with the `library(tidyverse)` command, it loads all of the "tidyverse" packages, listed above.
+
+```{r message=TRUE, warning=TRUE}
+library(tidyverse)
+```
+
+Set working directory 
+=========================================================
+
+```{r}
+# getwd()
+# setwd("R")
+# getwd()
+```
+
+Load required packages
+=========================================================
+
+```{r}
+library(tidyverse)  # Functions for data manipulation
+library(gapminder)  # Gapminder data
+```
+
+Read data into global environment
+=========================================================
+
+```{r}
+data("gapminder")
+# View(gapminder)
+```
+
+Write data to csv file
+=========================================================
+
+```{r}
+write_csv(gapminder, "data/gapminder.csv")
+```
+
+Read saved csv file for comparison
+=========================================================
+```{r}
+gapminder_from_csv <- read_csv("data/gapminder.csv")
+```
+
+Examine the data structures - `str`
+=========================================================
+```{r}
+str(gapminder)
+str(gapminder_from_csv)
+```
+
+Examine the data structures - `summary`
+=========================================================
+```{r}
+summary(gapminder)
+summary(gapminder_from_csv)
+```
+
+Examine the data structures - `dplyr::glimpse`
+=========================================================
+```{r}
+glimpse(gapminder)
+glimpse(gapminder_from_csv)
+```
