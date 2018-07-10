@@ -8,7 +8,7 @@
 
 # Load required packages ====
 library(tidyverse)
-# library(gapminder)  # If not already loaded.
+library(gapminder)
 
 # Quick sanity-check of the data ====
 gapminder
