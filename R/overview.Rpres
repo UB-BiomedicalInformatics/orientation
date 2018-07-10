@@ -62,7 +62,7 @@ We call tidyverse a "metapackage" because when you load it into memory with the 
 library(tidyverse)
 ```
 
-Set working directory 
+Set working directory (if necessary)
 =========================================================
 
 ```{r}

@@ -81,7 +81,7 @@ library(tidyverse)
 ✖ dplyr::lag()    masks stats::lag()
 ```
 
-Set working directory 
+Set working directory (if necessary)
 =========================================================
 
 
